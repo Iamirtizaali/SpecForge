@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(cd /d D:\\\\SpecForge)",
-      "Bash(node -e \"console.log\\(require\\('./node_modules/react-day-picker/package.json'\\).version\\)\")",
-      "Bash(npx next *)"
-    ]
-  }
-}
