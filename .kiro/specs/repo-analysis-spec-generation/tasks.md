@@ -6,14 +6,14 @@ This plan implements SpecForge's core feature: accepting a public GitHub reposit
 
 ## Tasks
 
-- [ ] 1. Project foundation and shared types
-  - [ ] 1.1 Set up project structure and shared TypeScript interfaces
+- [x] 1. Project foundation and shared types
+  - [x] 1.1 Set up project structure and shared TypeScript interfaces
     - Create `lib/types.ts` with interfaces: `AnalyzeRequest`, `RepoMetadata`, `FetchedFile`, `AIAnalysisResult`, `GeneratedSpec`, `AnalyzeResponse`, `ProgressPhase`, `ErrorResponse`
     - Create `lib/constants.ts` with limits (20 files max, 100KB total, 50KB per file, 10000 file tree max, 90s timeout, 120s AI timeout)
     - Create `lib/errors.ts` with typed error classes: `ValidationError`, `GitHubError`, `AIAnalysisError`, `CacheError`
     - _Requirements: 1.1, 1.2, 2.1, 3.3, 3.6, 4.3, 12.6_
 
-  - [ ] 1.2 Set up environment configuration and validation
+  - [x] 1.2 Set up environment configuration and validation
     - Create `lib/config.ts` that reads and validates `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`, `GITHUB_TOKEN` from environment
     - Throw descriptive errors at startup if required vars are missing
     - Create `.env.local.example` documenting all required variables
